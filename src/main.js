@@ -4,7 +4,7 @@ import { DRACOLoader, GLTFLoader, RGBELoader, ThreeMFLoader } from 'three/exampl
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import CustomShaderMaterial from 'three-custom-shader-material/vanilla'
 import vertex from './Shaders/wobbleShader/vertex.vert'
-import fragment from './Shaders/wobbleShader/Fragment.frag'
+import fragment from './Shaders/wobbleShader/fragment.frag'
 import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 const canvas = document.querySelector('.webgl');
 
