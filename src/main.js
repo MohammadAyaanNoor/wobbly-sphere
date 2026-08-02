@@ -42,7 +42,7 @@ scene.add(directionalLight);
 
 
 rgbeLoader.load(
-  './static/teutonic_castle_moat_2k.hdr',
+  '/textures/teutonic_castle_moat_2k.hdr',
   (environmentMap) =>{
     environmentMap.mapping = THREE.EquirectangularReflectionMapping;
     environmentMap.colorSpace = THREE.SRGBColorSpace;
