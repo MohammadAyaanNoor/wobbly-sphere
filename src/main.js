@@ -3,8 +3,8 @@ import * as THREE from 'three';
 import { DRACOLoader, GLTFLoader, RGBELoader, ThreeMFLoader } from 'three/examples/jsm/Addons.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import CustomShaderMaterial from 'three-custom-shader-material/vanilla'
-import customVertexShader from './Shaders/wobbleShader/vertex.vert'
-import customFragmentShader from './Shaders/wobbleShader/Fragment.frag'
+import vertex from './Shaders/wobbleShader/vertex.vert'
+import fragment from './Shaders/wobbleShader/Fragment.frag'
 import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 const canvas = document.querySelector('.webgl');
 
@@ -95,8 +95,8 @@ const uniforms = {
 const material = new CustomShaderMaterial({
   //csm
   baseMaterial : THREE.MeshPhysicalMaterial,
-  vertexShader:customVertexShader,
-  fragmentShader:customFragmentShader,
+  vertexShader:vertex,
+  fragmentShader:fragment,
   uniforms:uniforms,
   silent:true,
 
